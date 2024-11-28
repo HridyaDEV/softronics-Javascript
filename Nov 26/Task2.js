@@ -2,6 +2,12 @@
 eg(100 - 90 - A , 90-80 - B , 80-70-C , etc…, 60 -0 - F ).*/
 
 function grade(value) {
+    if(!value ){
+        
+        console.log("invalid");
+        return
+        
+    }
     if (value >= 90 && value <= 100) {
         console.log("Grade = A");
     } else if (value >= 80 && value < 90) {
@@ -20,3 +26,6 @@ grade(83);
 grade(75); 
 grade(62);
 grade(55);  
+grade(0);
+grade();
+
