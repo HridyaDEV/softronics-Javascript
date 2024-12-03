@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Content</title>
+    <style>
+       
+        #content {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #a75c5c;
+           height: 50px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="content">This content is visible.</div>
+    <button id="button">Hide Content</button>
+
+    <script>
+        var contDiv = document.getElementById('content');
+        var butt = document.getElementById('button');
+
+        butt.addEventListener('click', () => {
+            
+            contDiv.hidden = !contDiv.hidden;
+
+            
+            if (contDiv.hidden) {
+                button.innerHTML = 'Show Content';
+            } else {
+                button.innerHTML = 'Hide Content';
+            }
+        });
+    </script>
+</body>
+</html>
+

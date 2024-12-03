@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Theme</title>
+
+<style>
+    body{
+       
+        background-color:white ;
+        color: black;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(108, 108, 177);
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div id="content">
+        <p>This is some text.</p>
+    </div>
+    <button id="button">Switch to Dark Mode</button>
+
+    <script>
+        var button = document.getElementById("button");
+        let darkMode = false;
+
+        button.addEventListener('click', function() {
+
+            
+            darkMode = !darkMode;
+
+            if (darkMode) {
+                
+                document.body.style.backgroundColor = "white"
+                document.body.style.color = "black";
+                button.innerHTML = "Switch to Dark Mode";
+            } else {
+                
+
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                button.innerHTML= "Switch to Light Mode";
+            }
+            
+
+           
+        });
+    </script>
+
+</body>
+</html>
