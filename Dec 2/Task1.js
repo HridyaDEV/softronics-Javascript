@@ -49,9 +49,9 @@ const employees = [
 
   //7.Write a function that takes an employee's name and returns it in reverse order. Apply this function to all employee names  using map
 
-    const reversedNames = employees.map(employee => reverseName(employee.name));
+    const reversedNames = employees.map(employee => revName(employee.name));
     
-    function reverseName(name) {
+    function revName(name) {
         return name.split("").reverse().join("");
     }
 
